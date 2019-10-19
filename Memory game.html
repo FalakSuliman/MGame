@@ -24,10 +24,12 @@
 
         	<span class="moves">3</span> Moves
 
-           //My restart button
-        <div class="restart" onclick="startGame()">
-           <i class="fa fa-repeat"></i>
-        </div>
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
         </section>
 
         <ul class="deck">
@@ -81,7 +83,22 @@
             </li>
         </ul>
     </div>
+    <div id="show1" class="cover">
+        <div class="back">
+            <h2>Congratulations </h2>
+            <a class="close" href=# >×</a>
+            <div class="x">
+                Congratulations a win
+            </div>
+            <div class="y">
+                <p>You made <span id=finalMove> </span> moves </p>
+                <p>in <span id=totalTime> </span> </p>
+                <p>Rating:  <span id=starRating></span></p>
+            </div>
+    <button id="play.again"onclick="playAgain()">
+        Play again 😄</a>
+    </button>
 
-    <script src="java/JS.js"></script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>
